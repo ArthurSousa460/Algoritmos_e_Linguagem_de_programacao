@@ -10,6 +10,7 @@ def soma_dos_divisores(n):
             sum += i
     return sum
 
+
 print("---------------soma dos divisores de um número----------------")
 n = int(input("Digite um numero: "))
 print(soma_dos_divisores(n))

@@ -6,8 +6,7 @@
 <body>
     <h1>Algoritmos e linguagem de programção</h1>
     <p>
-        Repósitorio direcionado para os exercícios da cadeira de Algortimos e lingugem de programação do curso de Sistema de informação na
-        <br>faculdade Santa Terezinha(Cest) MA. 
+        Repósitorio direcionado para os exercícios da cadeira de Algortimos e lingugem de programação do curso de Sistema de informação na faculdade Santa Terezinha(Cest) MA. 
     </p>
     <p>
         A máteria consiste no ensino básico de um algoritmo(entrada, processamento e saída), além disso, a cadeira tem <br> o intuito de ensinar conceitos como:
