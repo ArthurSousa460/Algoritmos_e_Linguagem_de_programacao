@@ -10,7 +10,10 @@
 
 
 def media(sum, cont):
-    media = sum / cont
+    if (sum > 0 or sum < 0) and cont > 0:
+        media = sum / cont
+    else:
+        return 0
     if type(media) == float:
         return f"{media:.2f}"
 
@@ -49,5 +52,5 @@ print(f"A quantidade dos números digitado é: {cont}")
 print(f"A média dos valores digitados é: {media(sum,cont)}")
 print(f"O maior número digitado é: {maior}")
 print(f"O menor número digitado é: {menor}")
-print(f"A média entre os números parés são: {media(sum_p, cont_p)}")
+print(f"A média entre os números pares é: {media(sum_p, cont_p)}")
 
