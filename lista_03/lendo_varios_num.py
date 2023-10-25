@@ -1,27 +1,31 @@
 #Faça um programa que leia varios n números, calcule e mostre:  
 #(a) A soma dos numeros digitados  
 #(b) A quantidade de numeros digitados  
-#c) A media dos numeros digitados  
+#(c) A media dos numeros digitados  
 #(d) O maior numero digitado  
 #(e) O menor numero digitado  
 #(f) A media dos números pares
 
+#O programa deve terminar se o número 0 for digitado
+
 
 def media(sum, cont):
     media = sum / cont
-    return media
+    if type(media) == float:
+        return f"{media:.2f}"
 
 
 sum = 0
 cont = 0
 cont_p =0
 sum_p = 0
-resp = ''
-while resp != "N":
-    num = int(input("num:"))
-    resp = str(input("Quer continuar[Y|N]: ")).upper()
+while True:
+    num = int(input("Digite um número: "))
+
+    if num == 0:
+        break
     
-    if num % 2 == 0:
+    elif num % 2 == 0:
         cont_p += 1
         sum_p += num
 
@@ -38,12 +42,6 @@ while resp != "N":
     sum += num
     cont += 1
 
-    if resp == "Y" or resp == 'N':
-        continue
-    else:
-        print("Valor digitado iválido!")
-        break
-    
 
 
 print(f"A soma dos números digitados é: {sum}")
