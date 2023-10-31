@@ -1,9 +1,3 @@
-#Criar uma agenda que:
-# Adciona contatos
-# Edita contatos
-# Lista contatos
-# Deleta contatos
-# os contatos seram compostos por nome e número
 import pandas as pd
 
 def menu():
@@ -37,11 +31,11 @@ def put_contact_name(name, new_name):
             print("nome autalizado com sucesso")
 
 
-def put_contact_number(number, new_number):
+def put_contact_number(name, new_number):
     for c in agenda:
-        if c["number"] == number:
+        if c["name"] == name:
             c["number"] = new_number
-            print("numero autalizado com sucesso")
+            print("Atualizado com sucesso")
 
 
 def delete_contact_name(name):
@@ -66,6 +60,10 @@ while True:
             name = str(input("Digite o nome:"))
             new_name = str(input("Digite o novo nome: "))
             put_contact_name(name, new_name)
+        case 4:
+            name = str(input("Digite o nome:"))
+            new_number = int(input("Digite o novo número:"))
+            put_contact_number(name, new_number) 
         case 5:
             name = str(input('Digite o nome: '))
             get_contact(name)
@@ -74,4 +72,3 @@ while True:
             delete_contact_name(name)
         case 7:
             break
-
